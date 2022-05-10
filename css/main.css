@@ -1,0 +1,571 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans',sans-serif; }
+
+.body_aside {
+  display: grid;
+  grid-template-areas: "header" "aside1" "main" "aside2" "footer";
+  justify-items: stretch;
+  justify-content: stretch;
+  align-items: center; }
+
+.body_naside {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  justify-content: stretch;
+  align-items: center; }
+
+/* ------------------------------- Estilo del nav ---------------------------- */
+header {
+  grid-area: header;
+  top: 0px;
+  margin: 0px 1vw; }
+  header div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+
+/* ------------------------------- Estilo del Main --------------------------------- */
+main {
+  grid-area: main;
+  margin: 5px 1vw;
+  color: #303030; }
+  main a {
+    text-decoration: none;
+    color: #0000d5; }
+  main thead {
+    text-align: left; }
+  main .img_fondo {
+    width: 100vw; }
+
+.parrafo {
+  font-size: 17px;
+  text-align: center;
+  margin: 10px 0px; }
+
+/* ---Estilo del Main Index--- */
+.img_main {
+  display: flex;
+  justify-content: center; }
+
+/* ---Estilo del Main Bio--- */
+#Nico_foto {
+  width: 70vw;
+  margin: 0px 5vw; }
+
+.Bio_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.Bio_parrafo {
+  margin: 10px 5vw; }
+
+.Bio_intro {
+  margin: 10px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.Bio_videos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.Bio_video {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000000;
+  text-shadow: 2px 2px 5px #000000;
+  margin: 25px 0px; }
+
+.Bio_video_title {
+  font-weight: 500;
+  text-align: center; }
+
+/* ---Estilo del Main Fotos--- */
+.Fotos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center; }
+  .Fotos img {
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+/* ---Estilo del Main Discografía--- */
+.disco_indice {
+  margin: 10px 20px;
+  text-align: center; }
+  .disco_indice li {
+    list-style: none;
+    margin: 5px 15px; }
+
+.disco_class {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f5f5f5; }
+
+.disco {
+  margin: 25px 0px;
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-top: 1px solid #808080; }
+
+.disco_titulo {
+  margin: 0px 0px 30px 30px;
+  font-size: large; }
+
+.disco_portada {
+  width: 250px;
+  border: 5px solid #808080;
+  border-radius: 5px;
+  margin-bottom: 30px; }
+
+.disco_portada-temas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.tabla_temas {
+  width: 90vw;
+  background-color: #f5f5f5;
+  margin: 20px 10px; }
+  .tabla_temas td {
+    padding: 0px 5px; }
+  .tabla_temas thead th {
+    padding: 2px 0px;
+    border-bottom: 1px solid #808080;
+    background-color: #e2e2e2; }
+
+.Item {
+  text-align: center;
+  width: 40px; }
+
+.Time {
+  text-align: center;
+  width: 70px; }
+
+.inicio {
+  text-align: right;
+  font-size: 13px;
+  margin-right: 30px;
+  text-decoration: underline; }
+
+/* ---Estilo del Main Contacto--- */
+.main_contacto {
+  text-align: center; }
+
+.contacto_img {
+  width: 80vw; }
+
+.contacto_info {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px; }
+
+.contacto_forms .Contacto_formulario {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+.p_reserva {
+  margin-top: 10px;
+  width: 80vw;
+  font-size: 15px; }
+
+.selector_reserva {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  height: 25px;
+  width: auto; }
+
+.Contacto_formulario_namebox {
+  margin-top: 10px; }
+
+.Contacto_formulario_box {
+  background-color: #e2e2e2;
+  color: #000000;
+  width: 80vw; }
+
+.boton {
+  margin: 10px 10px 10px 0px;
+  background-color: #f5f5f5;
+  width: 70px; }
+
+/* ------------------------------- Estilo del Aside ------------------------------- */
+.aside1 {
+  grid-area: aside1;
+  margin: 5px 0px 5px 1vw;
+  transform: rotate(90deg);
+  justify-self: center; }
+
+.aside2 {
+  grid-area: aside2;
+  margin: 5px 1vw 5px 0px;
+  transform: rotate(90deg);
+  justify-self: center; }
+
+.aside_foto {
+  width: 10vw;
+  max-width: 150px;
+  animation-name: aparicion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s; }
+
+@keyframes aparicion {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 0.02; }
+  2% {
+    opacity: 0.04; }
+  3% {
+    opacity: 0.06; }
+  4% {
+    opacity: 0.08; }
+  5% {
+    opacity: 0.1; }
+  6% {
+    opacity: 0.12; }
+  7% {
+    opacity: 0.14; }
+  8% {
+    opacity: 0.16; }
+  9% {
+    opacity: 0.18; }
+  10% {
+    opacity: 0.2; }
+  11% {
+    opacity: 0.22; }
+  12% {
+    opacity: 0.24; }
+  13% {
+    opacity: 0.26; }
+  14% {
+    opacity: 0.28; }
+  15% {
+    opacity: 0.3; }
+  16% {
+    opacity: 0.32; }
+  17% {
+    opacity: 0.34; }
+  18% {
+    opacity: 0.36; }
+  19% {
+    opacity: 0.38; }
+  20% {
+    opacity: 0.4; }
+  21% {
+    opacity: 0.42; }
+  22% {
+    opacity: 0.44; }
+  23% {
+    opacity: 0.46; }
+  24% {
+    opacity: 0.48; }
+  25% {
+    opacity: 0.5; }
+  26% {
+    opacity: 0.52; }
+  27% {
+    opacity: 0.54; }
+  28% {
+    opacity: 0.56; }
+  29% {
+    opacity: 0.58; }
+  30% {
+    opacity: 0.6; }
+  31% {
+    opacity: 0.62; }
+  32% {
+    opacity: 0.64; }
+  33% {
+    opacity: 0.66; }
+  34% {
+    opacity: 0.68; }
+  35% {
+    opacity: 0.7; }
+  36% {
+    opacity: 0.72; }
+  37% {
+    opacity: 0.74; }
+  38% {
+    opacity: 0.76; }
+  39% {
+    opacity: 0.78; }
+  40% {
+    opacity: 0.8; }
+  41% {
+    opacity: 0.82; }
+  42% {
+    opacity: 0.84; }
+  43% {
+    opacity: 0.86; }
+  44% {
+    opacity: 0.88; }
+  45% {
+    opacity: 0.9; }
+  46% {
+    opacity: 0.92; }
+  47% {
+    opacity: 0.94; }
+  48% {
+    opacity: 0.96; }
+  49% {
+    opacity: 0.98; }
+  50% {
+    opacity: 1; }
+  51% {
+    opacity: 0.98; }
+  52% {
+    opacity: 0.96; }
+  53% {
+    opacity: 0.94; }
+  54% {
+    opacity: 0.92; }
+  55% {
+    opacity: 0.9; }
+  56% {
+    opacity: 0.88; }
+  57% {
+    opacity: 0.86; }
+  58% {
+    opacity: 0.84; }
+  59% {
+    opacity: 0.82; }
+  60% {
+    opacity: 0.8; }
+  61% {
+    opacity: 0.78; }
+  62% {
+    opacity: 0.76; }
+  63% {
+    opacity: 0.74; }
+  64% {
+    opacity: 0.72; }
+  65% {
+    opacity: 0.7; }
+  66% {
+    opacity: 0.68; }
+  67% {
+    opacity: 0.66; }
+  68% {
+    opacity: 0.64; }
+  69% {
+    opacity: 0.62; }
+  70% {
+    opacity: 0.6; }
+  71% {
+    opacity: 0.58; }
+  72% {
+    opacity: 0.56; }
+  73% {
+    opacity: 0.54; }
+  74% {
+    opacity: 0.52; }
+  75% {
+    opacity: 0.5; }
+  76% {
+    opacity: 0.48; }
+  77% {
+    opacity: 0.46; }
+  78% {
+    opacity: 0.44; }
+  79% {
+    opacity: 0.42; }
+  80% {
+    opacity: 0.4; }
+  81% {
+    opacity: 0.38; }
+  82% {
+    opacity: 0.36; }
+  83% {
+    opacity: 0.34; }
+  84% {
+    opacity: 0.32; }
+  85% {
+    opacity: 0.3; }
+  86% {
+    opacity: 0.28; }
+  87% {
+    opacity: 0.26; }
+  88% {
+    opacity: 0.24; }
+  89% {
+    opacity: 0.22; }
+  90% {
+    opacity: 0.2; }
+  91% {
+    opacity: 0.18; }
+  92% {
+    opacity: 0.16; }
+  93% {
+    opacity: 0.14; }
+  94% {
+    opacity: 0.12; }
+  95% {
+    opacity: 0.1; }
+  96% {
+    opacity: 0.08; }
+  97% {
+    opacity: 0.06; }
+  98% {
+    opacity: 0.04; }
+  99% {
+    opacity: 0.02; }
+  100% {
+    opacity: 0; } }
+
+/* ------------------------------- Estilo del Footer ------------------------------- */
+footer {
+  grid-area: footer;
+  margin: 0px 1vw; }
+  footer div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+
+.footer_derechos {
+  padding: 0px 15px;
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #a3a3a3; }
+
+.footer_media_icon {
+  height: 30px;
+  margin: 0px; }
+
+/* ------------------------------- Media query >768px ------------------------------- */
+/* ------------------------------- Media query >768px ------------------------------- */
+@media screen and (min-width: 768px) {
+  .body_aside1 {
+    grid-template-areas: "header header header" "asidea main asideb" "footer footer footer";
+    justify-content: stretch;
+    align-items: center; }
+  .body_naside {
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  /* ---Estilo del nav--- */
+  header div {
+    flex-flow: row wrap; }
+  nav div ul li {
+    margin: 0px;
+    padding: 10px; }
+  /* ---Estilo del Main--- */
+  main a:hover {
+    text-decoration: underline; }
+  /* ---Estilo del main bio--- */
+  #Nico_foto {
+    width: 30vw;
+    max-width: 350px;
+    margin: 0px 2vw; }
+  .parrafo {
+    margin: 10px 0px 20px 0px; }
+  .Bio_parrafo {
+    width: 50vw;
+    margin: 10px 30px 20px 30px; }
+  .Bio_intro {
+    width: 90vw;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+  .Bio_videos {
+    flex-flow: row wrap; }
+  .Bio_video {
+    margin: 25px; }
+  .Bio_video_vid {
+    width: 560px;
+    height: 315px; }
+  /* ---Estilo del Main Fotos--- */
+  .Fotos {
+    flex-flow: row wrap; }
+    .Fotos img {
+      width: auto;
+      height: 400px; }
+  .Fotos_item:hover {
+    position: relative;
+    top: 20px; }
+  /* ---Estilo del Main Discografía--- */
+  .disco_indice {
+    text-align: left; }
+    .disco_indice li {
+      list-style: inside; }
+  .disco_titulo {
+    margin: 0px 0px 15px 30px; }
+  .disco_portada {
+    width: 20vw;
+    margin-bottom: 0px; }
+  .disco_portada-temas {
+    flex-flow: row wrap; }
+  .tabla_temas {
+    width: 60vw;
+    margin-bottom: 0px; }
+  .inicio {
+    margin-top: 20px; }
+  .asidea {
+    grid-area: asidea;
+    transform: rotate(0deg); }
+  .asideb {
+    grid-area: asideb;
+    transform: rotate(0deg); }
+  /* ---Estilo del Footer--- */
+  footer div {
+    flex-flow: row wrap;
+    justify-content: flex-end; } }
+
+/* ---Estilo del Main Contacto--- */
+header div {
+  justify-content: flex-end; }
+
+/* ------------------------------- Media query >1024px ------------------------------- */
+/* ------------------------------- Media query >1024px ------------------------------- */
+@media screen and (min-width: 1024px) {
+  .body_aside {
+    grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
+    justify-content: stretch;
+    align-items: center; }
+  .body_aside1 {
+    grid-template-areas: "header header header" "asidea main asideb" "footer footer footer"; }
+  /* ---Estilo del Main Contacto--- */
+  .main_contacto {
+    margin-left: 10px;
+    text-align: left; }
+  .contacto_forms {
+    align-items: flex-start; }
+  .contacto_img {
+    width: 340px;
+    margin-right: 10px; }
+  .contacto_info {
+    flex-flow: row-reverse wrap;
+    justify-content: space-between; }
+  .p_reserva {
+    width: 35vw; }
+  .Contacto_formulario {
+    align-items: flex-start; }
+  .Contacto_formulario_box {
+    width: 35vw; }
+  .aside1 {
+    transform: rotate(0deg);
+    justify-self: auto; }
+  .aside2 {
+    justify-self: right;
+    transform: rotate(0deg); } }

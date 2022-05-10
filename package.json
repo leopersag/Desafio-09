@@ -1,0 +1,25 @@
+{
+  "name": "desafio-09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crea-css":"node-sass --include-path scss scss/main.scss css/main.css",
+    "vigila-scss":"nodemon -e scss -x \"npm run crea-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leopersag/Desafio-09.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leopersag/Desafio-09/issues"
+  },
+  "homepage": "https://github.com/leopersag/Desafio-09#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
