@@ -196,14 +196,16 @@ main{
     }
 }
 
-.Item{
-    text-align: center;
-    width: 40px;
-}
+$ejemplomaps: (
+    Item: 40px,
+    Time: 70px,
+);
 
-.Time{
-    text-align: center;
-    width: 70px; 
+@each $ejemplo, $width in $ejemplomaps {
+    .#{$ejemplo}{
+        text-align: center;
+        width: $width;
+    }
 }
 
 .inicio{
@@ -224,9 +226,8 @@ main{
 }
 
 .contacto_info{
-    display: flex;
+    @extend .img_main;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
     margin: $pxsize*2 0px;
 }
@@ -237,7 +238,6 @@ main{
 
 .p_reserva{
     margin-top: $pxsize*2;
-    width: 80vw;
     font-size: 15px;
 }
 

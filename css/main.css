@@ -47,7 +47,7 @@ main {
   margin: 10px 0px; }
 
 /* ---Estilo del Main Index--- */
-.img_main {
+.img_main, .contacto_info {
   display: flex;
   justify-content: center; }
 
@@ -172,9 +172,7 @@ main {
   width: 80vw; }
 
 .contacto_info {
-  display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
   align-items: center;
   margin: 10px 0px; }
 
@@ -186,7 +184,6 @@ main {
 
 .p_reserva {
   margin-top: 10px;
-  width: 80vw;
   font-size: 15px; }
 
 .selector_reserva {
@@ -511,9 +508,6 @@ footer {
       list-style: inside; }
   .disco_titulo {
     margin: 0px 0px 15px 30px; }
-  .disco_portada {
-    width: 20vw;
-    margin-bottom: 0px; }
   .disco_portada-temas {
     flex-flow: row wrap; }
   .tabla_temas {
